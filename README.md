@@ -1,6 +1,10 @@
 # Sardinia
 This repo includes the R script to implement the point pattern analysis for the Nuraghe data presented in the paper "".
 
+<p align="center">
+  <img src="https://github.com/ManueleBazzichetto/Sardinia/blob/main/River_Sardinia.png" />
+</p>
+
 Analyses were carried out using R version 4.1.0 (2021-05-18).
 
 Version of R packages used:
