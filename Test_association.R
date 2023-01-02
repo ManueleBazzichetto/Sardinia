@@ -61,7 +61,7 @@ Torus_list_ppp <- spatstat.random::rshift.ppp(Nuraghe.ppp.rw, nsim = 5000, edge 
 
 # Minimum number of points falling inside Sardinia, taken as 70% of the original points
 # (Only these point patterns with at least this number of points are used in the test.)
-Min_N <- floor((nrow(Nuraghe_villagi.utm)-3)*.7) # 3817
+Min_N <- floor((nrow(Nuraghe_villagi))*.7) # 3817
 
 # Compute the number of points in each vegetation category for the shifted point patterns
 # (This takes some time so the progress bar is implemented.)
@@ -74,7 +74,7 @@ Exp_counts <- lapply(1:length(Torus_list_ppp), function(i) {
   pnt_sf <- pnt_sf[2:nrow(pnt_sf),] # exclude the bounding polygon (keep only the points)
   pnt_veg <- st_join(               # spatial join of the points with the vegetation map
     pnt_sf,                         # (LEG_ITALIA is the column with the ID of vegetation categories.)
-    Veg_map.utm[c("LEG_ITALIA")], 
+    Veg_map[c("LEG_ITALIA")], 
     join = st_intersects
   )                                 
   smp_sz <- sum(!is.na(pnt_veg$LEG_ITALIA)) # sample size (number of points falling inside the vegetation map)
