@@ -1,5 +1,5 @@
 # Sardinia
-This repo includes the R script to implement the point pattern analysis for the Nuraghe data presented in the paper "".
+This repo includes the R script to implement the point pattern analysis for the Nuraghe data presented in the paper "Ecology meets archaeology: past, present and future vegetation-derived ecosystems services from the Nuragic Sardinia (1700 - 580 BCE)" by Malavasi et al. (DOI: 10.1002/pan3.10461).
 
 <p align="center">
   <img src="https://github.com/ManueleBazzichetto/Sardinia/blob/main/River_Sardinia.png" />
